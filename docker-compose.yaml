@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  api:
+    build: ./1st-folder
+    container_name: docker_c1
+    ports:
+      - '4000:3000'
+    volumes: 
+      - ./1st-folder:/app
+      - /app/node_modules
+    
